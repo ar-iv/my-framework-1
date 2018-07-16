@@ -9,20 +9,14 @@ use application\core\Controller;
  */
 class AccountController extends Controller
 {
-	
-	// function __construct()
-	// {
-		
-	// }
-
 	public function loginAction()
 	{
-		echo 'Страница входа.';
+		$this->view->render('Страница входа.');
 	}
 
 	public function registerAction()
 	{
-		echo 'Страница регистрации.';
+		$this->view->render('Страница регистрации.');
 	}
 }
 

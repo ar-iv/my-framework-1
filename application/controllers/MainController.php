@@ -9,15 +9,9 @@ use application\core\Controller;
  */
 class MainController extends Controller
 {
-	
-	// function __construct()
-	// {
-		
-	// }
-
 	public function indexAction()
 	{
-		echo 'Главная страница.';
+		$this->view->render('Главная страница.');
 	}
 }
 

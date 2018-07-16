@@ -8,7 +8,6 @@ namespace application\core;
  */
 class Router
 {
-
 	protected $routes = [];
 	protected $params = [];
 
