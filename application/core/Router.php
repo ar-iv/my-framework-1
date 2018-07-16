@@ -3,6 +3,10 @@
 // Пространство имён
 namespace application\core;
 
+// хз
+use application\core\View;
+
+
 /**
  * Router
  */
@@ -56,17 +60,19 @@ class Router
 					$controller->$action();
 				} else 
 				{
-					echo 'Action <b>'. $action .'</b> не найден';
-					registerAction();
+					// echo 'Action <b>'. $action .'</b> не найден';
+					View::errorCode(404);
 				}
 			} else 
 			{
-				echo 'Класс <b>'. $path .'</b> не найден';
+				// echo 'Класс <b>'. $path .'</b> не найден';
+				View::errorCode(404);
 			}
 		}
 		else 
 		{
-			echo 'Маршрут НЕ найден.';
+			// echo 'Маршрут НЕ найден.';
+			View::errorCode(404);
 		}
 	}
 }
