@@ -1,0 +1,9 @@
+# Folder project
+111
+# Clone
+# git clone https://github.com/ar-iv/mvc-blog.git
+# Добавление изменений, сделанных другим ползователем
+# в папку .git
+# git fetch
+# в рабочую папку
+# gti pull

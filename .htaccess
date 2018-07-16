@@ -1,0 +1,13 @@
+# Кодировка
+AddDefaultCharset utf-8
+
+# Подключение модуля
+RewriteEngine on
+RewriteBase /
+
+# Если не файл (!-f) и не директория (!-d)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Перенаправление на index.php
+RewriteRule ^(.*)$ index.php
