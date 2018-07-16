@@ -23,7 +23,6 @@ class AccountController extends Controller
 	public function registerAction()
 	{
 		echo 'Страница регистрации.';
-		var_dump($this->route);
 	}
 }
 
