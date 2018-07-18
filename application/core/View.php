@@ -52,6 +52,18 @@ class View
         header('location: '.$url);
         exit;
     }
+
+    // jQuery massege
+    public function message($status, $message)
+    {
+        exit(json_encode(['status' => 'status', 'message' => $message]));
+    }
+
+    // Redirect
+    public function location($url)
+    {
+        exit(json_encode(['url' => $url]));
+    }
 }
 
  ?>

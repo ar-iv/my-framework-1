@@ -11,6 +11,10 @@ class AccountController extends Controller
 {
 	public function loginAction()
 	{
+		if (!empty($_POST)) {
+			$this->view->location('/');
+			// $this->view->message('error', 'one');
+		}
 		// Переадресация
 		// $this->view->redirect('/');
 		$this->view->render('Страница входа.');
